@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  href="style.css" type="text/css" rel="stylesheet">
+        <title>SURVEY FORM</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">LEARN SIMPLY SURVEY FORM</h1>
+                <p id="description" class="description text-center">Thank you for taking the time to help us to improve the platform </p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter Your Name" required="">
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email Id</label>
+                    <input type="text" id="email" class="form-control" placeholder="Enter Your Email Id" required="">
+                </div>
+                <div class="form-group">
+                    <label id="age-label" for="name">Age</label>
+                    <input type="number" id="number" name="age" min="18" max="40" class="form-control" placeholder="Enter Your Age" required="">
+                </div>
+               <div class="form-group">
+                   <p>Which Option best Describes Your Control Role?</p>
+                   <select id="dropdown" name="role" class="form-control" required="">
+                       <option disabled="" selected="" value="">Select Your current Role</option>
+                       <option value="student">Student</option>
+                       <option value="job">Full Time Job</option>
+                       <option value="Learner">Full Time Learner</option>
+                       <option value="preferno">Prefer not to Say</option>
+                       <option value="other">Other</option>
+                   </select>
+               </div>
+               <div class="form-group">
+                   <p>Would you recommend your friends about Learn Simply?</p>
+                   <label>
+                       <input type="radio" name="definitely" class="input-radio" value="definitely">Definitely</label>
+                       <label>
+                        <input type="radio" name="maybe" class="input-radio" value="maybe">MayBe</label>
+                        <label>
+                            <input type="radio" name="notsure" class="input-radio" value="notsure">Not Sure</label>
+               </div>
+               <div class="form-group">
+                   <p>What would you like to see improved?
+                   <span class="clue">(Check all that Apply)</span>
+                </p>
+                <label>
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end projects
+                </label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end projects
+                </label>
+                <label>
+                    <input name="prefer" value="data Visualization" type="checkbox" class="input-checkbox">Data Visualization
+                </label>
+                <label>
+                    <input name="prefer" value="Challenges" type="checkbox" class="input-checkbox">Challenges
+                </label>
+                <label>
+                    <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Open Source Community
+                </label>
+                <label>
+                    <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Gitter Help Rooms
+                </label>
+                <label>
+                    <input name="prefer" value="video" type="checkbox" class="input-checkbox">video
+                </label>
+                <label>
+                    <input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">City Meetups  
+                 </label>
+                 <label>
+                    <input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki
+                </label>
+                <label>
+                    <input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum
+                </label>
+                <label>
+                    <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses
+                </label>
+               </div>
+               <div class="form-group">
+                   <p>Any Comments or Suggestions?</p>
+                   <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter Your Comment Here....."></textarea> 
+                          </div>
+                          <div class="form-group">
+                              <button type="submit" id="submit" class="submit-button"><a href=thankyou.html>Submit</a></button>
+                          </div>
+
+            </form>
+        </div>
+    </body>
+</html>
